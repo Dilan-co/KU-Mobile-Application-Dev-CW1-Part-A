@@ -1,6 +1,6 @@
 name: my_simple_note
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -10,6 +10,14 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # packages
+  flutter_native_splash: ^2.4.2
+  get: ^4.6.6
+  path: ^1.9.0
+  path_provider: ^2.1.5
+  permission_handler: ^11.3.1
+  sqflite: ^2.4.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -17,3 +25,41 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/logos/app_logo_cw1.png
+    - assets/logos/app_icon_cw1.png
+    # - assets/images/taskqa_logo_white.png
+
+  fonts:
+    - family: Clash Grotesk
+      fonts:
+        - asset: assets/fonts/clash_grotesk/ClashGrotesk-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/clash_grotesk/ClashGrotesk-Light.ttf
+          weight: 300
+        - asset: assets/fonts/clash_grotesk/ClashGrotesk-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/clash_grotesk/ClashGrotesk-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/clash_grotesk/ClashGrotesk-Semibold.ttf
+          weight: 600
+        - asset: assets/fonts/clash_grotesk/ClashGrotesk-Bold.ttf
+          weight: 700
+
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/manrope/Manrope-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/manrope/Manrope-Light.ttf
+          weight: 300
+        - asset: assets/fonts/manrope/Manrope-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/manrope/Manrope-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/manrope/Manrope-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/manrope/Manrope-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/manrope/Manrope-ExtraBold.ttf
+          weight: 800
