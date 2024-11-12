@@ -150,13 +150,16 @@ class _NoteEditPageState extends State<NoteEditPage> {
                     ),
                     child: TextFormField(
                       //
+                      minLines: 1,
+                      maxLines: 2,
                       enabled: true,
                       controller: textControllerTitle,
                       textCapitalization: TextCapitalization.sentences,
                       textAlign: TextAlign.left,
                       style: TextStyle(
+                        fontFamily: CFGTextStyle.clashGrotesk,
                         fontSize: CFGTextStyle.titleFontSize,
-                        fontWeight: CFGTextStyle.regularFontWeight,
+                        fontWeight: CFGTextStyle.mediumFontWeight,
                         color: CFGTextStyle.defaultFontColor,
                       ),
                       decoration: InputDecoration(
@@ -185,8 +188,9 @@ class _NoteEditPageState extends State<NoteEditPage> {
                         hintText: "Title",
                         hintStyle: TextStyle(
                           letterSpacing: 1,
+                          fontFamily: CFGTextStyle.clashGrotesk,
                           fontSize: CFGTextStyle.titleFontSize,
-                          fontWeight: CFGTextStyle.regularFontWeight,
+                          fontWeight: CFGTextStyle.mediumFontWeight,
                           color: CFGTextStyle.lightGreyFontColor,
                         ),
                         floatingLabelBehavior: FloatingLabelBehavior.never,
@@ -256,8 +260,9 @@ class _NoteEditPageState extends State<NoteEditPage> {
                   textCapitalization: TextCapitalization.sentences,
                   textAlign: TextAlign.left,
                   style: TextStyle(
+                    fontFamily: CFGTextStyle.manrope,
                     fontSize: CFGTextStyle.defaultFontSize,
-                    fontWeight: CFGTextStyle.regularFontWeight,
+                    fontWeight: CFGTextStyle.mediumFontWeight,
                     color: CFGTextStyle.defaultFontColor,
                   ),
                   decoration: InputDecoration(
@@ -284,8 +289,9 @@ class _NoteEditPageState extends State<NoteEditPage> {
                     hintText: "Type your note here",
                     hintStyle: TextStyle(
                       letterSpacing: 1,
+                      fontFamily: CFGTextStyle.manrope,
                       fontSize: CFGTextStyle.defaultFontSize,
-                      fontWeight: CFGTextStyle.regularFontWeight,
+                      fontWeight: CFGTextStyle.mediumFontWeight,
                       color: CFGTextStyle.lightGreyFontColor,
                     ),
                     floatingLabelBehavior: FloatingLabelBehavior.never,

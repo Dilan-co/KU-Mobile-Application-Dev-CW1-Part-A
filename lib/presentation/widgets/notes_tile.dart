@@ -138,9 +138,9 @@ class _NotesTileState extends State<NotesTile> {
                     data.noteTitle ?? "",
                     style: const TextStyle(
                       // overflow: TextOverflow.ellipsis,
-                      fontFamily: CFGTextStyle.manrope,
-                      fontSize: CFGTextStyle.smallTitleFontSize,
-                      fontWeight: CFGTextStyle.boldFontWeight,
+                      fontFamily: CFGTextStyle.clashGrotesk,
+                      fontSize: CFGTextStyle.subTitleFontSize,
+                      fontWeight: CFGTextStyle.mediumFontWeight,
                     ),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
@@ -184,7 +184,7 @@ class _NotesTileState extends State<NotesTile> {
                   style: const TextStyle(
                     fontFamily: CFGTextStyle.manrope,
                     fontSize: CFGTextStyle.defaultFontSize,
-                    fontWeight: CFGTextStyle.regularFontWeight,
+                    fontWeight: CFGTextStyle.mediumFontWeight,
                   )),
             ),
           ],
