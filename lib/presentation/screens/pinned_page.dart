@@ -69,7 +69,7 @@ class _PinnedPageState extends State<PinnedPage> {
           itemBuilder: (context, index) {
             return NotesTile(
               index: index,
-              noteData: pinnedList[index],
+              noteData: pinnedList.reversed.toList()[index],
             );
           },
         );

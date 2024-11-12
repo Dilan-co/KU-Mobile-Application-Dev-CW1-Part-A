@@ -69,7 +69,7 @@ class _NotesPageState extends State<NotesPage> {
           itemBuilder: (context, index) {
             return NotesTile(
               index: index,
-              noteData: allList[index],
+              noteData: allList.reversed.toList()[index],
             );
           },
         );
