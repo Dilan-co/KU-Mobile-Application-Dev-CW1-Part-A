@@ -3,6 +3,9 @@ import 'dart:ui';
 import 'package:my_simple_note/utils/constants/color.dart';
 
 class CFGTextStyle {
+  //Font Family
+  static const String clashGrotesk = "Clash Grotesk";
+  static const String manrope = "Manrope";
   //Font Sizes
   static const double smallFontSize = 12;
   static const double defaultFontSize = 14;

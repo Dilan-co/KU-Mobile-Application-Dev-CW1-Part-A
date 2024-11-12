@@ -7,8 +7,8 @@ class CFGColor {
   static Color darkGrey = const Color(0xFF575757);
   static Color midDarkGrey = const Color(0xFF8F8F8F);
   static Color midGrey = const Color(0xFFBDBDBD);
-  static Color lightGrey = const Color(0xFFDDDDDD);
-  static Color bLightGrey = const Color(0xFFEEEEEE);
+  static Color lightGrey = const Color(0xFFEEEEEE);
+  static Color bLightGrey = const Color(0xFFFBFBFB);
   static Color blue = const Color(0xFF1796EB);
   static Color green = const Color(0xFF3CB00F);
   static Color yellow = const Color(0xFFD6C20E);

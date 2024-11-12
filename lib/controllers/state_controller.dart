@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_simple_note/data/models/note_model.dart';
 import 'package:sqflite/sqflite.dart';
 
 class StateController extends GetxController {
@@ -7,8 +8,8 @@ class StateController extends GetxController {
   RxString externalStoragePath = "".obs;
   RxString documentsDirectoryPath = "".obs;
   Future<bool>? loadingFuture;
-  //Mobile or Tablet Size
-  RxDouble deviceAppBarMultiplier = 1.0.obs;
+  RxList<NoteModel> allNotesList = <NoteModel>[].obs;
+  RxList<NoteModel> pinnedNotesList = <NoteModel>[].obs;
 
   //Dropdown Lists
   List<Map<int, String>> xList = [];
@@ -38,5 +39,21 @@ class StateController extends GetxController {
 
   getDocumentsDirectoryPath() {
     return documentsDirectoryPath();
+  }
+
+  setAllNotesList(List<NoteModel> list) {
+    allNotesList(list);
+  }
+
+  getAllNotesList() {
+    return allNotesList();
+  }
+
+  setPinnedNotesList(List<NoteModel> list) {
+    pinnedNotesList(list);
+  }
+
+  getPinnedNotesList() {
+    return pinnedNotesList();
   }
 }

@@ -16,10 +16,10 @@ class NoteModel {
   });
 
   factory NoteModel.fromSqfliteDatabase(Map<String, dynamic> map) => NoteModel(
-        noteId: map["user_id"],
-        noteTitle: map["username"],
-        noteText: map["password"],
-        pinned: map["pin"],
+        noteId: map["note_id"],
+        noteTitle: map["note_title"],
+        noteText: map["note_text"],
+        pinned: map["pinned"],
         createdAt: map["created_at"],
         updatedAt: map["updated_at"],
       );
